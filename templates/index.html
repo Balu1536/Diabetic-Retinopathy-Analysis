@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/prediction">Predict</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<!-- ✅ Content -->
+<div class="container">
+
+    <h1>Diabetic Retinopathy Detection System</h1>
+
+    <h3>Detailed Problem Statement</h3>
+    <img class="grid-img" src="{{ url_for('static', filename='images/projectDetailshome.jpg') }}"/>
+    <p>
+        Deep Learning Fundus Image Analysis for Early Detection of Diabetic Retinopathy
+        is a medical imaging initiative aimed at leveraging advanced deep learning
+        techniques to analyze retinal fundus images. Diabetic Retinopathy (DR) is one
+        of the leading causes of preventable blindness among diabetic patients
+        worldwide. Early diagnosis is crucial, yet traditional manual screening
+        requires expert ophthalmologists, significant time, and clinical resources.
+    </p>
+
+    <p>
+        The increasing number of diabetic patients has created a pressing need for
+        automated, accurate, and scalable diagnostic tools. Manual examination of
+        fundus images is prone to variability, delayed diagnosis, and limited access
+        in remote regions. Therefore, there is a critical demand for intelligent
+        systems capable of detecting retinal abnormalities efficiently.
+    </p>
+
+    <h3>Real-World Application Scenarios</h3>
+
+    <p><b>Scenario 1: Early Disease Detection</b><br>
+        Healthcare professionals can use this system to identify early signs of
+        Diabetic Retinopathy. The model assists clinicians by highlighting potential
+        abnormalities, enabling timely intervention and monitoring.
+    </p>
+
+    <p><b>Scenario 2: Screening Programs</b><br>
+        Hospitals and public health organizations can deploy the solution for
+        large-scale screening of diabetic patients, improving diagnostic coverage
+        and reducing workload on specialists.
+    </p>
+
+    <p><b>Scenario 3: Telemedicine & Remote Monitoring</b><br>
+        Telemedicine platforms can integrate this model, allowing retinal images
+        captured via portable devices to be analyzed remotely, ensuring accessibility
+        for rural and underserved populations.
+    </p>
+
+    <h3>Proposed Solution</h3>
+
+    <p>
+        This project proposes a Deep Learning-based automated diagnostic system using
+        a Transfer Learning approach with the Xception Convolutional Neural Network.
+        The system processes retinal fundus images, extracts discriminative visual
+        features, and classifies them into different stages of Diabetic Retinopathy.
+    </p>
+
+    <p>
+        By utilizing pre-trained CNN architectures, the solution achieves high
+        accuracy while reducing training complexity. The integrated Flask web
+        application provides an intuitive user interface for image upload and
+        prediction, while the IBM Cloudant Database ensures reliable storage and
+        retrieval of user and prediction data.
+    </p>
+
+    <center>
+        <a href="/login">
+            <button>Login to Predict</button>
+        </a>
+    </center>
+
+    <div class="bottom-links">
+        <br>
+        <a href="/about">About Project</a>
+    </div>
+
+</div>
+
+</body>
+</html>

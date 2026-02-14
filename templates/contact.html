@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
 </head>
 <body>
-$END$
+
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/prediction">Predict</a>
+    <a href="/contact">Contact</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<!-- ✅ Contact Card -->
+<div class="container">
+
+    <h1>Contact Information</h1>
+
+    <div class="contact-box">
+        <p><b>Project:</b> Diabetic Retinopathy Detection System</p>
+        <p><b>Developed By:</b> BUSETTY BALASUBRAMANYAM</p>
+        <p><b>Email:</b> balasubramanyam200517@gmail.com</p>
+        <p><b>Institution:</b> KSRM College of Engineering</p>
+        <p><b>Department:</b> Computer Science Engineering</p>
+    </div>
+
+    <h2>Send Message</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="button">Send Message</button>
+    </form>
+
+</div>
+
 </body>
 </html>

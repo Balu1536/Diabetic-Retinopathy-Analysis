@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>About Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
 </head>
+
 <body>
-$END$
+
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/prediction">Predict</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<!-- ✅ SCREEN 1 — PROJECT -->
+<div class="fullscreen project-screen">
+    <div>
+        <h1>Diabetic Retinopathy Detection System</h1>
+        <h3>KSRM College of Engineering</h3>
+        <p>Year of Completion: 2026</p>
+
+        <br><br>
+
+        <p>
+            This project uses Deep Learning (Xception Model) to automatically classify
+            retinal fundus images into different stages of Diabetic Retinopathy.
+        </p>
+    </div>
+</div>
+
+<!-- ✅ SCREEN 2 — PROFILE -->
+<div class="fullscreen profile-screen">
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='images/balu2.jpg') }}">
+
+        <h1>BUSETTY BALASUBRAMANYAM</h1>
+        <p>B.Tech – Computer Science Engineering</p>
+        <br>
+        <p><b>Skills:</b> Python, Deep Learning, Flask, TensorFlow, Full Stack, Gen AI</p>
+        <p><b>Role:</b> Project Lead & Model Development</p>
+    </div>
+</div>
+
+<!-- ✅ SCREEN 3 — TEAM -->
+<div class="fullscreen team-screen">
+    <div>
+        <h1>Project Team</h1>
+
+        <br><br>
+
+        <div class="team-grid">
+
+            <div class="member-card">
+                <img src="{{ url_for('static', filename='images/charnya.jpg') }}">
+                <h3>Atla Charanya Reddy</h3>
+            </div>
+
+            <div class="member-card">
+                <img src="{{ url_for('static', filename='images/member2.jpg') }}">
+                <h3>Basetty Shivani</h3>
+            </div>
+
+            <div class="member-card">
+                <img src="{{ url_for('static', filename='images/member3.jpg') }}">
+                <h3>Bandi Anjali Reddy</h3>
+            </div>
+
+            <div class="member-card">
+                <img src="{{ url_for('static', filename='images/member4.jpg') }}">
+                <h3>Vishnu Vardhan</h3>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <a href="/">
+            <button>Back to Home</button>
+        </a>
+    </div>
+</div>
+
 </body>
 </html>

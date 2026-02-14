@@ -1,0 +1,166 @@
+/* ✅ Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* ✅ Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    animation: slideDown 0.6s ease;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #00d4ff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Underline animation */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #00d4ff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* Navbar animation */
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* ✅ Prediction Card ⭐ */
+.container {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 35px;
+    border-radius: 15px;
+    width: 900px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Heading */
+h2 {
+    margin-bottom: 18px;
+    color: #00d4ff;
+}
+
+/* ✅ File Input */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Glow on interaction */
+input[type="file"]:hover {
+    box-shadow: 0px 0px 8px #00d4ff;
+}
+
+/* ✅ Buttons */
+button {
+    background: #00d4ff;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00aacc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ✅ Prediction Result */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ffcc;
+}
+
+/* ✅ Image Preview */
+img {
+    margin-top: 15px;
+    max-width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* ✅ Details Box ⭐ */
+.details-box {
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.details-box p {
+    margin-bottom: 8px;
+}
+
+/* ✅ Secondary Buttons */
+a button {
+    margin-top: 12px;
+}

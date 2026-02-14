@@ -1,0 +1,106 @@
+/* ✅ Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* ✅ Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    animation: slideDown 0.6s ease;
+}
+
+.navbar a {
+    color: #00d4ff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background: #00d4ff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* ✅ Logout Card */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 380px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+/* ✅ Button */
+button {
+    background: #00d4ff;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00aacc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ✅ Link */
+a {
+    text-decoration: none;
+}

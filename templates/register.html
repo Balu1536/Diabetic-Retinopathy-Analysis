@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+</head>
+<body>
+
+<!-- ✅ Navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/prediction">Predict</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</div>
+
+<!-- ✅ Register Card -->
+<div class="container">
+
+    <h2>Create Account</h2>
+
+    <form action="/afterreg" method="post">
+        <input type="text" name="id" placeholder="Enter Username / Email" required>
+        <input type="password" name="psw" placeholder="Create Password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    {% if pred %}
+        <div class="status-message">
+            {{ pred }}
+        </div>
+    {% endif %}
+
+    <br>
+
+    <a href="/login">
+        Already Registered? Login
+    </a>
+
+</div>
+
+</body>
+</html>
